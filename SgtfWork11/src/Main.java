@@ -10,10 +10,11 @@ import java.io.IOException;
 public class Main {
 	
 	public static void main(String[] args) throws IOException {//Stream(System.in.read)はエラー処理が必須
-		String buff = "";
+		String buff = "";//文字列作成用の一時変数
 		
 		System.out.print(">");
 		
+		//文字の入力を受け付ける
 		while (true) {
 			int c = System.in.read();//文字コードを得る
 			
@@ -26,6 +27,7 @@ public class Main {
 			}
 		}
 
+		//文字列の表示
 		if (buff.equals("")) {
 			System.out.print("NONE");
 		} else {
